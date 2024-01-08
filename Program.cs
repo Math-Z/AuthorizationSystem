@@ -23,6 +23,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 builder.Services.AddCors(options =>
 {
+
     options.AddPolicy("CorsPolicy",
         builder => builder
             .AllowAnyMethod()
@@ -40,6 +41,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseCors("CorsPolicy");
+
 
 app.UseStaticFiles();
 
