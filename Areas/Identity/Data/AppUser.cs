@@ -10,4 +10,3 @@ namespace AuthorizationSystem.Areas.Identity.Data;
 public class AppUser : IdentityUser
 {
 }
-
